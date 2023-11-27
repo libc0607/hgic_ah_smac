@@ -1,0 +1,14 @@
+config HGICS
+	tristate "   HUGE-IC SoftMac WLAN Driver"
+
+config HGIC_AH
+	bool "        hgic ah device support"
+	depends on HGICS
+
+config HGIC_2G
+	bool "        hgic 2.4G device support"
+	depends on HGICS
+
+config HGIC_STABR
+	bool "        hgic sta bridge support"
+	depends on HGICS
